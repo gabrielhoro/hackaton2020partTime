@@ -2,102 +2,34 @@ const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 
-document.body.style.background = "url('https://images.unsplash.com/photo-1529472119196-cb724127a98e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=621&q=80') no-repeat right top";
-
 let quizQuestions = [
-	{
-		question: "Why are do noses wet?",
-		answers: {
-			a: 'To be cute',
-			b: 'to help absorb scent chemicals',
-			c: 'to moisten their kin'
-		},
-		correctAnswer: 'b'
-	},
-	{
-		question: "Which dogs are the best lifeguards?",
-		answers: {
-			a: 'Cockerspaniels',
-			b: 'Golden Retrievers',
-			c: 'Newfoundlands'
-		},
-		correctAnswer: 'c'
+    {
+        question: "Why are do noses wet?",
+        answers: {
+            a: 'To be cute',
+            b: 'to help absorb scent chemicals',
+            c: 'to moisten their kin'
+        },
+        correctAnswer: 'b'
     },
     {
-		question: "How many dogs survived the titanic?",
-		answers: {
-			a: '1',
-			b: '2',
-			c: '3'
-		},
-		correctAnswer: 'c'
-    },
-
-    {
-		question: "Can a bloodhound's sense of smell be used in court?",
-		answers: {
-			a: 'yes',
-			b: 'no',
-			c: 'maybe'
-		},
-		correctAnswer: 'a'
-    },
-    {
-		question: "How tall is the tallest dog in the world?",
-		answers: {
-			a: '100in',
-			b: '18in',
-			c: '44in'
-		},
-		correctAnswer: 'c'
-    },
-    {
-		question: "Basenji dogs _________",
-		answers: {
-			a: 'bark',
-			b: 'yodel',
-			c: 'cry'
-		},
-		correctAnswer: 'b'
-    },
-    {
-		question: "What character in StarWars are based on Dogs?",
-		answers: {
-			a: 'Ewoks',
-			b: 'Jedis',
-			c: 'Royalty'
-		},
-		correctAnswer: 'a'
-    },
-    {
-		question: "What percentage of Dalmations are deaf in one ear?",
-		answers: {
-			a: '10%',
-			b: '30%',
-			c: '70%'
-		},
-		correctAnswer: 'b'
-    },
-    {
-		question: "How many eyelids does a dog have?",
-		answers: {
-			a: '3',
-			b: '2',
-			c: '1'
-		},
-		correctAnswer: 'a'
-    },
-    {
-		question: "Who would win a long distance race - a greyhound or a cheetah?",
-		answers: {
-			a: 'Greyhound',
-			b: 'Cheetah',
-			c: 'Tie'
-		},
-		correctAnswer: 'a'
+        question: "Which dogs are the best lifeguards?",
+        answers: {
+            a: 'Cockerspaniels',
+            b: 'Golden Retrievers',
+            c: 'Newfoundlands'
+        },
+        correctAnswer: 'c'
+    }, {
+        question: "Why are do noses wet?",
+        answers: {
+            a: 'To be cute',
+            b: 'to help absorb scent chemicals',
+            c: 'to moisten their kin'
+        },
+        correctAnswer: 'b'
     }
-
-];
+]
 
 function createQuiz(){
 let output = [] 
